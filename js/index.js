@@ -20,5 +20,7 @@ loginButton.addEventListener('click', function(){
 // Event
 
 calculateButton.addEventListener('click', function(){
-    console.log('Clicked button')
+    let rate = parseFloat(shippingWeight.value) / 12
+    console.log(rate)
 })
+
