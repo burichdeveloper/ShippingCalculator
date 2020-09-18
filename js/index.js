@@ -1,6 +1,7 @@
 // Get reference variables ro the input and label elements
 const calculateButton = document.querySelector('label')
 const shippingWeight = document.querySelector('input')
+const shippingRateDisplay = document.querySelector('.Shipping-rate')
 
 //create ref var to logo
 //add click event to the logo and log text to the console
@@ -21,6 +22,6 @@ loginButton.addEventListener('click', function(){
 
 calculateButton.addEventListener('click', function(){
     let rate = parseFloat(shippingWeight.value) / 12
-    console.log(rate)
+    shippingRateDisplay.textContent = '$' + rate + '.00'
 })
 
